@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spa-expense-tracker/static/css/main.17993af0.css",
+    "main.js": "/spa-expense-tracker/static/js/main.ef9236e9.js",
+    "index.html": "/spa-expense-tracker/index.html",
+    "main.17993af0.css.map": "/spa-expense-tracker/static/css/main.17993af0.css.map",
+    "main.ef9236e9.js.map": "/spa-expense-tracker/static/js/main.ef9236e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17993af0.css",
+    "static/js/main.ef9236e9.js"
+  ]
+}
