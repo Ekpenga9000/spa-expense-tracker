@@ -41,7 +41,7 @@ const ExpenseFilterForm = ({onStatusFilter,onMerchantFilter, onDateFilter}) => {
     return (
         <form>
         <div className="mb-3">
-            <label for="startDate"className="bold dashboard-label form-label">From</label>
+            <label htmlFor="startDate"className="bold dashboard-label form-label">From</label>
                 <input
                     type="date"
                     className="dashboard-input"
@@ -49,7 +49,7 @@ const ExpenseFilterForm = ({onStatusFilter,onMerchantFilter, onDateFilter}) => {
                     onChange={handleInput("from")}/>
         </div>
         <div className="mb-3">
-            <label for="endDate" className="bold dashboard-label form-label">To</label>
+            <label htmlFor="endDate" className="bold dashboard-label form-label">To</label>
                 <input
                     type="date"
                     className="dashboard-input"
@@ -58,7 +58,7 @@ const ExpenseFilterForm = ({onStatusFilter,onMerchantFilter, onDateFilter}) => {
         </div>
         <div className="d-flex justify-content-around">
             <div>
-                <label for="minVal" className="bold dashboard-label form-label">Min</label>
+                <label htmlFor="minVal" className="bold dashboard-label form-label">Min</label>
                     <input
                         type="number"
                         className="dashboard-input"
@@ -69,7 +69,7 @@ const ExpenseFilterForm = ({onStatusFilter,onMerchantFilter, onDateFilter}) => {
             <div className="pt-4 mx-2"><p>-</p></div>
                
             <div>
-                <label for="maxVal" className="bold dashboard-label form-label">Max</label>
+                <label htmlFor="maxVal" className="bold dashboard-label form-label">Max</label>
                     <input
                         type="number"
                         className="dashboard-input"
@@ -89,23 +89,23 @@ const ExpenseFilterForm = ({onStatusFilter,onMerchantFilter, onDateFilter}) => {
         <div className="mb-3">
             <label className="form-label bold text-secondary dashboard-label">Status</label>
                 <div className="d-flex">
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="checkbox" id="formCheckNew"/>
-                        <label class="form-check-label" for="formCheckNew">
+                    <div className="form-check me-3">
+                        <input className="form-check-input" type="checkbox" id="formCheckNew"/>
+                        <label className="form-check-label" htmlFor="formCheckNew">
                             New
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox"  id="formCheckProgress"/>
-                        <label class="form-check-label" for="formCheckProgress">
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox"  id="formCheckProgress"/>
+                        <label className="form-check-label" htmlFor="formCheckProgress">
                         In Progress
                         </label>
                     </div>
             
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox"  id="formCheckReimbursed"/>
-                    <label class="form-check-label" for="formCheckReimbursed">
+                <div className="form-check">
+                    <input className="form-check-input" type="checkbox"  id="formCheckReimbursed"/>
+                    <label className="form-check-label" htmlFor="formCheckReimbursed">
                         Reimbursed
                     </label>
                 </div>   

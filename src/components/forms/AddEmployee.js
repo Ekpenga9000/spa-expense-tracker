@@ -6,6 +6,7 @@ import { DepartmentData } from '../data/DepartmentData';
 import { Location } from '../data/Location';
 
 const AddEmployee = () => {
+    const [dept, setDept] = useState(DepartmentData)
     const [files, setFiles] = useState([]);
     const { getRootProps, getInputProps } = useDropzone({
         accept: "image/*",
@@ -63,15 +64,15 @@ const AddEmployee = () => {
                                     <div><label for="lastname" className='form-label bold'>Last name</label></div>
                                     <div><input type="text" name="lastname" className='form-control' id='lastname'/></div>
                                 </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="radio" name="male" id="male"/>
-                                    <label class="form-check-label" for="male">
+                                <div className="form-check mb-3">
+                                    <input className="form-check-input" type="radio" name="male" id="male"/>
+                                    <label className="form-check-label" for="male">
                                         Male
                                     </label>
                                     </div>
-                                    <div class="form-check mb-3">
-                                    <input class="form-check-input" type="radio" name="female" id="female"/>
-                                    <label class="form-check-label" for="female">
+                                    <div className="form-check mb-3">
+                                    <input className="form-check-input" type="radio" name="female" id="female"/>
+                                    <label className="form-check-label" for="female">
                                         Female
                                     </label>
                                     </div>
@@ -79,8 +80,8 @@ const AddEmployee = () => {
                                     <label className="form-label bold">Deparment</label>
                                     <select className="form-select">
                                         <option value=''></option>
-                                        {DepartmentData.map((DepartmentData) => {
-                                            return (<option value={DepartmentData} key={DepartmentData}>{DepartmentData}</option>)
+                                        {dept.map((DepartmentDataobj) => {
+                                            return (<option value={DepartmentDataobj.department} key={DepartmentDataobj.id}>{DepartmentDataobj.department}</option>)
                                         })};
                                     </select>
                                 </div>
@@ -93,7 +94,7 @@ const AddEmployee = () => {
                                         })};
                                     </select>
                                 </div>
-                                <div class="mb-3">
+                                <div className="mb-3">
                               <div>
                                   <label className="form-label bold" for="addNewComment">Job Description</label>
                                 </div>  

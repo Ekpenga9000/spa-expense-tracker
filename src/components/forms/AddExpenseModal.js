@@ -42,22 +42,22 @@ function AddExpenseModal({closeModal}) {
                                 })};
                             </select>
                           </div>
-                            <div class="mb-3">
+                            <div className="mb-3">
                                 <label className="form-label bold" for="addInputforAmount">Total</label>
                                 <div className="input-group">
                                 <div className="input-group-text">$</div>
-                                <input type="text" class="form-control dashboard-input" id="addInputforAmount"/>
+                                <input type="text" className="form-control dashboard-input" id="addInputforAmount"/>
                                 </div>
                           </div>
                           <div className="mb-3">
                                 <label for="addExpenseDate"className="bold dashboard-label form-label">Date</label>
                                 <input type="date" className="dashboard-input" id="addExpenseDate"/>
                           </div>
-                          <div class="mb-3">
+                          <div className="mb-3">
                               <div>
                                   <label className="form-label bold" for="addNewComment">Comment</label>
                                 </div>  
-                                <textarea class="form-control dashboard-input" id="addNewComment"></textarea>
+                                <textarea className="form-control dashboard-input" id="addNewComment"></textarea>
                           </div>
                       </div>
                     <div id='DragAndDropPictureModal' className='p-3'>

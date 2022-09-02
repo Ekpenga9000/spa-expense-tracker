@@ -8,7 +8,7 @@ import ExpenseFilterForm from "./forms/ExpenseFilterForm";
 import AddExpenseModal from "./forms/AddExpenseModal";
 
 
-let amount = "$ 4,000,000"
+let amount = "$ 4,000,000";
 const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
 const isSameOrBefore = require("dayjs/plugin/isSameOrBefore");
 dayjs.extend(isSameOrBefore);
@@ -28,7 +28,7 @@ function Dashboard() {
         const filteredData = tableData.filter((item) => {
             if (field === "from" && dayjs(item.Date).isSameOrAfter(dayjs(Date))) {
                 return item;
-            }
+            } 
         });
         setData(filteredData);
 
@@ -127,13 +127,11 @@ function Dashboard() {
                                         </thead>
                                         <tbody>
                                                 {items.map(tableDataObj => (
-                                                <tr key={tableDataObj.id}>
-                                                    <td className="stickyposition-left">{tableDataObj.Date}</td>     
+                                                <tr key={tableDataObj.id}><td className="stickyposition-left">{tableDataObj.Date}</td>     
                                                     <td>{tableDataObj.Merchant}</td>     
                                                     <td>{tableDataObj.Total}</td>     
                                                     <td>{tableDataObj.Status}</td>     
-                                                    <td>{tableDataObj.Comment}</td>                   
-                                                </tr>
+                                                    <td>{tableDataObj.Comment}</td></tr>
                                             ))};  
                                             
                                         </tbody>
